@@ -31,7 +31,7 @@ export function FinalCta() {
           </article>
         </Reveal>
 
-        <Reveal delay={0.08}>
+        <Reveal className="form-panel" delay={0.08}>
           <p className="lede">{cta.formIntro}</p>
           <form className="contact-form" onSubmit={onSubmit}>
             <label>
