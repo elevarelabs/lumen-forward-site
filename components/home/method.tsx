@@ -28,7 +28,7 @@ export function Method() {
               viewport={{ once: true, amount: 0.35 }}
               transition={{ duration: 0.55, delay: index * 0.05, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="font-serif text-5xl text-gold/80">{String(index + 1).padStart(2, "0")}</p>
+              <p className="font-sans text-sm font-medium tracking-[0.22em] text-gold">{String(index + 1).padStart(2, "0")}</p>
               <h3 className="mt-4 font-serif text-3xl">{step.name}</h3>
               <p className="mt-4 text-[1.02rem] leading-relaxed text-cream/80">{step.body}</p>
             </motion.li>

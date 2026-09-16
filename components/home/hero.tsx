@@ -28,7 +28,6 @@ export function Hero() {
             LF
           </div>
           <motion.div className="relative max-w-4xl" {...fade(0.05)}>
-            <p className="eyebrow text-navy-soft">{home.hero.asideLabel}</p>
             <h1
               id="hero-heading"
               className="mt-6 font-serif text-[clamp(2.7rem,6.4vw,6.4rem)] leading-[0.94] tracking-[-0.03em] text-navy"

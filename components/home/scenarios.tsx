@@ -27,7 +27,7 @@ export function Scenarios() {
               transition={{ duration: 0.55, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ y: -2 }}
             >
-              <p className="font-serif text-3xl text-gold">{item.number}</p>
+              <p className="font-sans text-sm font-medium tracking-[0.2em] text-gold">{item.number}</p>
               <h3 className="mt-5 font-serif text-[1.7rem] leading-snug text-navy">{item.title}</h3>
               <p className="mt-4 text-[1.02rem] leading-relaxed text-navy-soft">{item.body}</p>
             </motion.li>

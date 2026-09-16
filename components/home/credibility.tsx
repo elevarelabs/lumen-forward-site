@@ -25,7 +25,7 @@ export function Credibility() {
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="font-serif text-4xl text-navy">{stat.value}</p>
+              <p className="font-serif text-4xl tabular-nums text-navy">{stat.value}</p>
               <p className="mt-2 text-[0.78rem] font-medium tracking-[0.16em] text-navy uppercase">{stat.label}</p>
               <p className="mt-4 text-[1.02rem] leading-relaxed text-navy-soft">{stat.detail}</p>
             </motion.li>
