@@ -33,7 +33,11 @@ export default function EngagementsPage() {
                 <h2 className="mt-3 font-serif text-3xl text-navy">{rung.name}</h2>
                 <p className="mt-4 max-w-2xl text-[1.05rem] leading-relaxed text-navy-soft">{rung.body}</p>
                 <div className="mt-6">
-                  <CtaLink href={rung.href} variant={rung.cta === "Let's Talk" ? "secondary" : "quiet"} className="text-navy">
+                  <CtaLink
+                    href={rung.href}
+                    variant={rung.cta === "Let's Talk" ? "secondary" : "quiet"}
+                    className={rung.cta === "Let's Talk" ? "" : "text-navy"}
+                  >
                     {rung.cta}
                   </CtaLink>
                 </div>
