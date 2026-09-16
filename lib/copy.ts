@@ -1,199 +1,217 @@
 export const home = {
   hero: {
-    spine: "Lumen Forward Consulting",
-    h1LineOne: "Growth exposes",
-    h1LineTwo: "structure.",
-    deck: "Every business runs on some kind of operating model, whether anyone named it or not. Growth makes the gaps visible.",
-    body: "I work with founder-led service businesses that already have a decent team. The next chapter needs hands-on help: a large initiative, a team you intend to grow, or an operating model that no longer fits how the work actually runs.",
+    h1: "Growth exposes structure.",
+    deck: "Operating models that scale.",
+    body: "For founder-led businesses when growth outpaced how they run, or when work got heavy and the map never got redrawn.",
     cta: "Let's Talk",
-    ctaHref: "/#contact",
+    ctaHref: "/contact",
     secondaryCta: "Take the Structure Check",
     secondaryHref: "/structure-check",
-    meta: "Founder-led service businesses",
+    imageAlt: "Architectural structure showing scale",
+    imageSrc: "/images/architecture-structure.jpg",
   },
   scenarios: {
-    eyebrow: "The pattern is not always the same",
+    opening: "What worked at one stage can become the drag at the next.",
     heading: "What Growth Exposes",
     intro:
-      "Growth does not create one problem. Sometimes the team is ready and the operating model is not. Sometimes a hire never had a real seat. Sometimes one desk still holds every call. Three patterns, equal weight. None of them is the whole story.",
+      "A practical diagnostic for seeing where operational friction is showing up and what deserves attention next.",
+    reportCta: "Get the report",
+    reportHref: "/structure-check",
     items: [
       {
         number: "01",
         title: "Solid Teams, New Heights",
-        body: "You already have a capable team. What you do not have is the operating structure for a large initiative or the next chapter: a new offer, an expansion, a systems rebuild. The people can do the work. Ops has not caught up.",
+        body: "You have a capable, trusted team preparing for a major initiative. The ambition is clear, but the execution machinery is untested at this scale.",
       },
       {
         number: "02",
         title: "Hires Without Seats",
-        body: "Hiring fails or stalls because the role was never a seat. You hired against urgency. Accountability stayed vague. Performance stayed uneven. The next hire feels like relief, and often is not.",
+        body: "You have made deliberate hires for team growth, but the handoffs are messy. Roles are blurring, and growth is creating friction rather than momentum.",
       },
       {
         number: "03",
         title: "The Bottleneck",
-        body: "Decisions still funnel to one desk. Approvals, exceptions, and judgment calls wait. The team pauses. This is one pattern growth exposes. It is not the brand, and it is not the only reason to get help.",
+        body: "The business relies heavily on the founder for decisions. Work has gotten heavy, the map was never redrawn, and growth is hurting the very people building it.",
       },
     ],
-    reportLead: "Want the written briefing on these three patterns?",
-    reportCta: "Get the report",
+  },
+  officeBreak: {
+    src: "/images/editorial-office.jpg",
+    alt: "Quiet architectural office interior",
   },
   work: {
-    eyebrow: "How we work",
-    heading: "Hands-on, then handed off",
+    heading: "Hands-on operational leadership.",
     intro:
-      "I do not leave a deck and walk. I come in alongside your people, put structure into the work, and stay until it holds without me in the meeting.",
-    beats: [
-      {
-        name: "See how it actually runs",
-        body: "The unofficial map. Where work waits, where it doubles, where a few strong people carry an unnamed load. We start with the business as it is, not a generic assessment.",
-      },
-      {
-        name: "Build what the team will use",
-        body: "Seats that match the work. Decision rights people can act on. Cadence that holds when the week gets loud. Right-sized for a large initiative, a growing team, or a model that growth has outpaced.",
-      },
-      {
-        name: "Leave it with your people",
-        body: "Ownership transfers. I remain in the work until the change is real, then I step out. The point is a business that runs on clear structure, not continued presence.",
-      },
+      "We do not deliver a deck and walk away. We diagnose the friction in how your company operates, design the systems required to support your next phase of growth, and lead the implementation alongside your team.",
+    eyebrow: "How We Work",
+    stages: [
+      { number: "01", title: "Understand", body: "Mapping the current reality without judgment." },
+      { number: "02", title: "Find drag", body: "Identifying where effort is wasted and decisions stall." },
+      { number: "03", title: "Decide what to build", body: "Aligning on the precise operating model needed." },
+      { number: "04", title: "Lead implementation", body: "Building the structures alongside your team." },
+      { number: "05", title: "Hand off", body: "Ensuring your team owns the new way of working." },
     ],
   },
-  credibility: {
-    eyebrow: "The record",
-    heading: "Built in operations, not in commentary.",
-    stats: [
-      {
-        value: "19 years",
-        label: "GE Capital",
-        detail: "Operating discipline inside a large, unforgiving system.",
-      },
-      {
-        value: "Black Belt",
-        label: "Six Sigma",
-        detail: "A trained eye for process, variation, and what actually moves a result.",
-      },
-      {
-        value: "Former COO",
-        label: "Product Launch Formula",
-        detail: "The role ended in August 2026. The operating lessons did not.",
-      },
-    ],
-    aboutEyebrow: "About",
-    aboutHeading: "Jen Zils, Lumen Forward",
-    about: [
-      "Jen Zils founded Lumen Forward after two decades in operational leadership. Nineteen years at GE Capital. A Six Sigma Black Belt. Then COO of Product Launch Formula, a role that ended in August 2026.",
-      "She works as a trusted peer in the room. Warm, direct, practical. She comes in to see where structure stopped fitting, build what the team can run, and stay long enough for it to hold.",
-      "Lumen Forward is for founder-led service businesses whose people can do the work, and whose operating model has not kept up. A large initiative. A team you want to grow well. Structure that growth has outpaced. The job is the same: leave the business runnable by the people in it.",
+  outcomes: {
+    heading: "The result is clarity.",
+    items: [
+      "Decisions are made at the right level.",
+      "Handoffs are clean and documented.",
+      "The team has capacity for strategic initiatives.",
+      "Growth feels sustainable, not painful.",
     ],
   },
-  example: {
-    eyebrow: "What changed",
-    heading: "A composite from the floor",
-    body: "An advisory firm had a capable delivery team and a new retained offer that would not launch. Two hires had stalled because the job was \"help us grow\" rather than a seat. In ten weeks we wrote scorecards for Delivery Lead and Client Partner, mapped who owned pricing and scope, and stood up a Monday operating meeting with named owners. The retained offer launched with a lead and a backup. The two stalled seats were rewritten and filled against the new roles.",
+  aboutTeaser: {
+    heading: "About Jen Zils",
+    photoLabel: "Jen photo here",
+    paragraphs: [
+      "With over 25 years of operations leadership, I build the engines that drive sustainable businesses.",
+      "My track record includes 19 years at GE Capital, where I earned a Six Sigma Black Belt. I served as COO of Product Launch Formula through August 2026 and previously led operations for Internet Alchemy.",
+      "I do not prescribe generic frameworks. I build the specific operational structure your business needs right now.",
+    ],
+    cta: "Read full biography",
+  },
+  teamBreak: {
+    src: "/images/team-working.jpg",
+    alt: "Team working together at a table",
   },
   cta: {
-    eyebrow: "Next step",
-    heading: "Let's Talk",
-    body: "Tell me what growth is exposing. A large initiative, a team you want to grow, or a structure that no longer fits. I will tell you whether this work is a fit, and what it would take.",
-    micro: "No pitch deck. No theater. A clear read on fit.",
-    fields: {
-      name: "Name",
-      email: "Email",
-      note: "What is going on in the business?",
-    },
-    submit: "Let's Talk",
-    sending: "Sending",
-    success: "Received. I will follow up shortly.",
-    errorIncomplete: "Please complete all three fields.",
-    errorSend: "The form did not send. You can write directly instead.",
-    underForm: "If you would rather email, write to the address in the footer with a few sentences on what growth is exposing.",
+    heading: "Bring me the priority.",
+    button: "Let's Talk",
   },
+} as const;
+
+export const aboutPage = {
+  heading: "Operational reality over rigid frameworks.",
+  paragraphs: [
+    "With over 25 years of operations leadership, I build the engines that drive sustainable businesses. I specialize in founder-led organizations crossing thresholds where passion and effort are no longer enough to scale delivery.",
+    "My background is grounded in rigorous process design. At GE Capital I spent 19 years and served as a Six Sigma Black Belt, learning how to locate friction and systematically remove it from complex operational flows.",
+    "I later applied this structural rigor to fast-moving entrepreneurial environments. I served as COO of Product Launch Formula through August 2026 and previously led operations for Internet Alchemy, translating high-level visionary ambition into concrete, functioning operational models.",
+    "I do not believe in dropping generic methodologies onto unique businesses. Growth exposes structure. The solution is always to map your specific reality, find the drag, and build the precise operating model you need to sustain your next phase.",
+  ],
+  trackHeading: "Track Record",
+  track: [
+    {
+      org: "GE Capital",
+      role: "19 years. Six Sigma Black Belt",
+      desc: "Rigorous process optimization and friction removal in complex operational environments.",
+    },
+    {
+      org: "Product Launch Formula",
+      role: "Former COO, through August 2026",
+      desc: "Scaled delivery and built operational structures to support massive digital launches.",
+    },
+    {
+      org: "Internet Alchemy",
+      role: "Operations Leadership",
+      desc: "Translated visionary ambition into functioning, sustainable team operating models.",
+    },
+  ],
 } as const;
 
 export const structureCheckPage = {
-  eyebrow: "Free · about three minutes · six questions",
   heading: "Structure Check",
-  lede: "A private diagnostic. Where growth is exposing structure, and what to move first. Not a personality test. Not a cute quiz. A path forward.",
-  tagline: "See the pattern. Then choose the next move.",
+  lede: "A calibrated six-question assessment to locate operational friction within your team. Use the output immediately, or bring it to our first conversation.",
 } as const;
 
 export const engagementsPage = {
-  heading: "Engagements",
+  heading: "Engagement Models",
   intro:
-    "Hands-on operational leadership. Start with a private diagnostic, the written briefing, or a conversation. I stay in the work until the structure holds with your people.",
+    "Clear structures for working together. We align on the friction, define the scope, and execute with precision.",
   rungs: [
     {
+      label: "Diagnostic",
       name: "Structure Check",
-      meta: "Free · about three minutes",
-      body: "Six questions. A clearer read on where growth is exposing structure, and what to move first. Start here if you want a private signal before we talk.",
+      meta: "Free",
+      body: "A calibrated six-question assessment to locate operational friction within your team. Use the output immediately, or bring it to our first conversation.",
       href: "/structure-check",
       cta: "Take the Structure Check",
     },
     {
-      name: "Hands-on work",
-      meta: "Scoped",
-      body: "I come in alongside your team. We put seats, decision rights, and cadence into the work of a large initiative, a growing org, or a model that growth has outpaced. Then I hand it off. No forever retainer as the default.",
-      href: "/#contact",
+      label: "Deep Dive",
+      name: "Priority Sprint",
+      meta: "$7,500 · 2 to 3 weeks",
+      note: "Recommended start",
+      body: "A concentrated engagement to map your current reality, locate drag, and design the precise operating model needed next. Includes a clear credit line applied toward any subsequent implementation phase.",
+      href: "/contact",
+      cta: "Let's Talk",
+    },
+    {
+      label: "Execution",
+      name: "Implementation",
+      meta: "Scoped custom",
+      body: "Hands-on leadership to build the structures alongside your team. We align on the exact deliverables during the Priority Sprint.",
+      href: "/contact",
       cta: "Let's Talk",
     },
   ],
-  report: {
-    eyebrow: "Written briefing",
-    heading: "What Growth Exposes",
-    cta: "Get the report",
-    lede: "Three patterns, equal weight. A short briefing you can share with the people who have to live inside the structure.",
-    sections: [
-      {
-        title: "Solid Teams, New Heights",
-        body: "The team can already do the work. What failed to keep up is the operating model for the next chapter: a new offer, an expansion, a systems rebuild. Meetings multiply because ownership was never named for the new load. Delivery quality is not the issue. Cadence, seats, and decision rights are. The work is to give a capable team a spine that matches the height they are being asked to reach.",
-      },
-      {
-        title: "Hires Without Seats",
-        body: "A hire fails or stalls because the role was never a seat. The job was a feeling (relief, growth, help) instead of a sharp account of what the business now requires. Accountability stayed vague. Performance stayed uneven. Adding another person without rewriting the seat repeats the same miss. The work is to define the seat first, then hire against it.",
-      },
-      {
-        title: "The Bottleneck",
-        body: "Decisions still funnel to one desk. Approvals, exceptions, and judgment calls wait. This is a real pattern, and it is only one of the patterns growth exposes. Some businesses have this and a capable team facing a large initiative at the same time. The work is not a lecture about letting go. It is naming who decides, on what, and what no longer needs to route through one person by default.",
-      },
-    ],
-    close:
-      "If one of these is the room you are in, the Structure Check will show you where to focus. If you already know, Let's Talk.",
-  },
-  fit: {
-    heading: "Fit",
-    good: "Good fit when the team can execute once the work is named, and you want a system you can run, not a permanent extra seat on the org chart.",
-    not: "Not a fit for pre-revenue experiments, board-deck-only work, or a tool project with no structure underneath it.",
-  },
+  fitHeading: "Fit and Alignment",
+  goodHeading: "Good Fit",
+  good: [
+    "Founder-led businesses in transition.",
+    "Teams preparing for a major strategic initiative.",
+    "Leaders who know growth is outpacing operations.",
+    "Willingness to look honestly at current structures.",
+    "Desire for hands-on operational leadership, not just advice.",
+  ],
+  notHeading: "Not a Fit",
+  not: [
+    "Looking for a generic framework or rigid methodology.",
+    "Seeking a full-time permanent COO replacement.",
+    "Unwilling to dedicate time from key team members.",
+    "Startups without proven market demand.",
+    "Projects requiring solely software engineering.",
+  ],
+  closeHeading: "Ready to locate the drag?",
   cta: "Let's Talk",
 } as const;
 
+export const contactPage = {
+  heading: "Let's Talk",
+  intro:
+    "Whether you know exactly what structures are failing, or you just know growth has started to hurt, the first step is a conversation.",
+  body: "Tell me what the priority is. We will find a time to discuss where the drag is and how to remove it.",
+  direct: "Direct Contact",
+  fields: {
+    name: "Name",
+    email: "Email",
+    note: "What's the priority?",
+  },
+  submit: "Let's Talk",
+  sending: "Sending",
+  successHeading: "Message Received",
+  success:
+    "Thank you for reaching out. I will review your priority and be in touch shortly to find a time to talk.",
+  another: "Send another message",
+  errorIncomplete: "Please complete all three fields.",
+  errorSend: "The form did not send. You can write directly instead.",
+} as const;
+
 export const privacyPage = {
-  heading: "Privacy",
+  heading: "Privacy Policy",
   updated: "September 2026",
   sections: [
     {
-      title: "What this site collects",
-      body: "This is a marketing site. There is no account system and no product login. If you write through Let's Talk, I receive the name, email, and note you send so I can reply. The Structure Check runs in your browser. I do not receive your answers unless you choose to follow up.",
+      title: "Information Collection",
+      body: "Lumen Forward Consulting operates this website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our website. We use your data to provide and improve the service. By using the service, you agree to the collection and use of information in accordance with this policy.",
     },
     {
-      title: "How messages are delivered",
-      body: "When a form endpoint is configured, your message is sent through that provider so I can read it and follow up. If a form endpoint is not configured, your device opens a mail draft addressed to me instead. I use what you send only to assess fit and continue the conversation.",
+      title: "Contact Forms",
+      body: "When you submit a contact form on our website, we collect your name, email address, and the contents of your message. We use this information solely to respond to your inquiry and discuss potential consulting engagements. We do not sell or rent this information to third parties. The Structure Check runs in your browser. We do not receive your answers unless you choose to follow up.",
     },
     {
-      title: "What this site does not do",
-      body: "I do not sell contact details. I do not run an advertising pixel on this site. Hosting and security logs may record standard technical data (such as IP address and user agent) as part of serving the pages.",
-    },
-    {
-      title: "How long I keep a note",
-      body: "I keep correspondence as long as it is useful to the conversation or required for ordinary business records, then I delete it.",
+      title: "Cookies and Tracking",
+      body: "We may use standard analytics tools to understand how visitors interact with our website to improve the experience. This data is collected in aggregate. Hosting and security logs may record standard technical data as part of serving the pages.",
     },
     {
       title: "Questions",
-      body: "If you want a message removed or you have a privacy question, write through Let's Talk and say so. I will handle it directly.",
+      body: "If you have any questions about this Privacy Policy, please contact us at jen@lumenforward.com.",
     },
   ],
 } as const;
 
 export const notFoundCopy = {
   heading: "That page is not here.",
-  body: "The homepage, Structure Check, and Engagements are the public site.",
+  body: "The homepage, Structure Check, Engagements, About, and Let's Talk are the public site.",
   cta: "Back to Lumen Forward",
 } as const;

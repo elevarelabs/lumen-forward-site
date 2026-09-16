@@ -1,8 +1,8 @@
 # Lumen Forward
 
-Marketing site for Lumen Forward Consulting. Operational consulting for founder-led service businesses.
+Marketing site for Lumen Forward Consulting.
 
-**Growth exposes structure.** Primary CTA: **Let's Talk.**
+**Growth exposes structure.** Primary CTA: **Let's Talk.** Hero secondary: **Take the Structure Check** only.
 
 ## Stack
 
@@ -41,12 +41,14 @@ npm run build
 
 | Path | Page |
 | --- | --- |
-| `/` | Homepage (hero, What Growth Exposes, work, credibility, client example, Let's Talk) |
+| `/` | Homepage |
 | `/structure-check` | Structure Check diagnostic |
-| `/engagements` | Engagements, including Get the report |
-| `/privacy` | Privacy |
+| `/engagements` | Engagement models |
+| `/about` | About Jen Zils |
+| `/contact` | Let's Talk |
+| `/privacy` | Privacy Policy |
 
-Hero CTAs: Let's Talk (primary) and Take the Structure Check (one quieter secondary). Get the report lives on Engagements and as a mid-page link, not in the hero.
+Homepage: editorial split hero, What Growth Exposes (Get the report mid-page), How We Work (unbranded stages), outcomes, about teaser, Let's Talk. No branded Method. No revenue band on Home or About.
 
 ## Contact form
 
@@ -55,4 +57,4 @@ The Let's Talk form uses Formspree when an action URL is set. Otherwise it opens
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `NEXT_PUBLIC_CONTACT_FORM_ACTION` | No | Formspree endpoint |
-| `NEXT_PUBLIC_CONTACT_EMAIL` | No | Mailto fallback. Defaults to `hello@lumenforward.com` |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | No | Mailto fallback. Defaults to `jen@lumenforward.com` |

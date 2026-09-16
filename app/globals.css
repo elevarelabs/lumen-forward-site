@@ -50,3 +50,7 @@ body {
 .measure {
   max-width: 36rem;
 }
+
+.text-balance {
+  text-wrap: balance;
+}

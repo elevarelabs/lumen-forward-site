@@ -6,68 +6,60 @@ import { home } from "@/lib/copy";
 
 export function Hero() {
   const reduce = useReducedMotion();
-  const fade = (delay: number) =>
-    reduce
-      ? undefined
-      : {
-          initial: { opacity: 0, y: 12 },
-          animate: { opacity: 1, y: 0 },
-          transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] as const },
-        };
+  const fade = reduce
+    ? undefined
+    : {
+        initial: { opacity: 0, y: 12 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.7, delay: 0.06, ease: [0.22, 1, 0.36, 1] as const },
+      };
 
   return (
-    <section className="relative overflow-hidden bg-cream" aria-labelledby="hero-heading">
-      <div className="paper-grain pointer-events-none absolute inset-0 opacity-[0.035]" />
-
-      <div className="relative grid lg:min-h-[calc(100svh-4.75rem)] lg:grid-cols-12">
-        <div
-          className="pointer-events-none absolute inset-y-0 z-10 hidden w-px bg-gold lg:left-[41.666%] lg:block"
-          aria-hidden
-        />
-
-        <div className="relative order-1 flex items-end px-6 py-20 sm:px-10 lg:order-2 lg:col-span-7 lg:min-h-[calc(100svh-4.75rem)] lg:px-16 lg:py-24 xl:px-24">
-          <motion.div className="relative max-w-[18ch]" {...fade(0.04)}>
-            <h1
-              id="hero-heading"
-              className="font-serif text-[clamp(3.25rem,7.4vw,7.15rem)] leading-[0.9] tracking-[-0.035em] text-navy"
+    <section
+      className="relative flex min-h-[calc(100svh-6rem)] flex-col border-b border-navy/10 md:flex-row md:items-stretch"
+      aria-labelledby="hero-heading"
+    >
+      <div className="order-2 flex w-full flex-col justify-center px-6 py-16 sm:px-10 md:order-1 md:w-[55%] md:py-24 lg:px-16">
+        <motion.div className="max-w-xl" {...fade}>
+          <h1
+            id="hero-heading"
+            className="font-serif text-[clamp(3.1rem,8vw,8.5rem)] leading-[0.9] font-medium tracking-tight text-navy text-balance"
+          >
+            {home.hero.h1}
+          </h1>
+          <p className="mt-10 max-w-lg font-serif text-3xl leading-snug text-navy/80 md:text-4xl">
+            {home.hero.deck}
+          </p>
+          <div className="mt-8 h-px w-full max-w-sm bg-navy/20" aria-hidden />
+          <p className="mt-8 max-w-md text-lg leading-relaxed font-medium text-navy/70">
+            {home.hero.body}
+          </p>
+          <div className="mt-14 flex flex-col items-start gap-8 sm:flex-row sm:items-center sm:gap-12">
+            <Link
+              href={home.hero.ctaHref}
+              className="inline-flex h-16 items-center justify-center bg-navy px-12 text-xs font-semibold tracking-[0.2em] text-cream uppercase transition-colors hover:bg-navy-soft"
             >
-              <span className="block">{home.hero.h1LineOne}</span>
-              <span className="mt-2 block italic">{home.hero.h1LineTwo}</span>
-            </h1>
-          </motion.div>
-        </div>
-
-        <aside className="relative order-2 flex flex-col justify-between bg-navy px-6 py-14 text-cream sm:px-10 lg:order-1 lg:col-span-5 lg:px-14 lg:py-20 xl:px-16">
-          <p className="eyebrow text-gold">{home.hero.spine}</p>
-
-          <div className="my-16 max-w-[28rem] lg:my-0">
-            <motion.p
-              className="font-serif text-[1.55rem] leading-[1.28] text-cream sm:text-[1.75rem]"
-              {...fade(0.1)}
+              {home.hero.cta}
+            </Link>
+            <Link
+              href={home.hero.secondaryHref}
+              className="group relative pb-2 text-sm font-semibold tracking-[0.2em] text-navy uppercase transition-colors hover:text-gold"
             >
-              {home.hero.deck}
-            </motion.p>
-            <motion.p className="mt-8 text-[1.02rem] leading-[1.75] text-cream/80" {...fade(0.18)}>
-              {home.hero.body}
-            </motion.p>
-            <motion.div className="mt-12 flex flex-col items-start gap-6" {...fade(0.28)}>
-              <Link
-                href={home.hero.ctaHref}
-                className="inline-flex bg-gold px-6 py-3.5 text-[0.78rem] font-semibold tracking-[0.16em] text-navy uppercase transition-colors hover:bg-cream"
-              >
-                {home.hero.cta}
-              </Link>
-              <Link
-                href={home.hero.secondaryHref}
-                className="text-[0.8rem] tracking-[0.06em] text-cream/80 underline decoration-gold/60 underline-offset-[0.35em] transition-colors hover:text-cream hover:decoration-gold"
-              >
-                {home.hero.secondaryCta}
-              </Link>
-            </motion.div>
+              {home.hero.secondaryCta}
+              <span className="absolute bottom-0 left-0 h-px w-full bg-navy/20 transition-colors group-hover:bg-gold" />
+            </Link>
           </div>
+        </motion.div>
+      </div>
 
-          <p className="text-[0.68rem] tracking-[0.16em] text-gold uppercase">{home.hero.meta}</p>
-        </aside>
+      <div className="relative order-1 h-[50vh] w-full border-navy/10 md:order-2 md:h-auto md:min-h-[calc(100svh-6rem)] md:w-[45%] md:border-l">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={home.hero.imageSrc}
+          alt={home.hero.imageAlt}
+          className="h-full w-full object-cover object-center"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-navy/5 mix-blend-multiply" />
       </div>
     </section>
   );
