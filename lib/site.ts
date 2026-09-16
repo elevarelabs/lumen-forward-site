@@ -4,30 +4,29 @@ export const site = {
   url: "https://lumenforward.com",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@lumenforward.com",
   founder: "Jen Zils",
-  h1: "You built something meaningful. Now it can't run without you.",
+  h1: "Growth exposes structure.",
+  cta: "Let's Talk",
   meta: {
-    title: "Lumen Forward | Operating structure for founder-led service businesses",
+    title: "Lumen Forward | Operational consulting for founder-led service businesses",
     description:
-      "You built something meaningful. Now it can't run without you. Lumen Forward helps founder-led service businesses design roles, decision rights, and cadence so the company can run, grow, and take on larger work.",
-    ogTitle: "You built something meaningful. Now it can't run without you.",
+      "Growth exposes structure. Hands-on operational leadership for founder-led service businesses when the team is capable and the operating model has not kept up. Let's Talk.",
+    ogTitle: "Growth exposes structure.",
     ogDescription:
-      "Operating structure for founder-led service businesses. Discovery conversation with Jen Zils of Lumen Forward.",
+      "I help founder-led service businesses when growth outpaces how they run. Hands-on, built to hand off. Let's Talk.",
   },
 } as const;
 
 export const routes = {
   home: "/",
-  scenarios: "/#scenarios",
-  method: "/#method",
-  paradox: "/#paradox",
+  growth: "/#growth",
+  work: "/#work",
   about: "/#about",
   contact: "/#contact",
   privacy: "/privacy",
 } as const;
 
 export const nav = [
-  { href: routes.scenarios, label: "Scenarios" },
-  { href: routes.method, label: "Method" },
-  { href: routes.paradox, label: "Paradox" },
+  { href: routes.growth, label: "What Growth Exposes" },
+  { href: routes.work, label: "Work" },
   { href: routes.about, label: "About" },
 ] as const;

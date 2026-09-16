@@ -30,10 +30,10 @@ export function Hero() {
           <motion.div className="relative max-w-4xl" {...fade(0.05)}>
             <h1
               id="hero-heading"
-              className="mt-6 font-serif text-[clamp(2.7rem,6.4vw,6.4rem)] leading-[0.94] tracking-[-0.03em] text-navy"
+              className="font-serif text-[clamp(3.1rem,7.2vw,7rem)] leading-[0.92] tracking-[-0.03em] text-navy"
             >
               <span className="block">{home.hero.h1LineOne}</span>
-              <span className="mt-4 block italic text-navy">{home.hero.h1LineTwo}</span>
+              <span className="mt-3 block italic text-navy">{home.hero.h1LineTwo}</span>
             </h1>
             <div className="mt-10 h-px w-24 bg-gold" />
           </motion.div>

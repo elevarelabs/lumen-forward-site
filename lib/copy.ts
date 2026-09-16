@@ -1,89 +1,56 @@
 export const home = {
   hero: {
     spine: "Lumen Forward Consulting",
-    kicker: "Operating structure",
-    h1LineOne: "You built something meaningful.",
-    h1LineTwo: "Now it can't run without you.",
-    deck: "That is true when every decision still waits on the founder. It is also true when you already have strong people, and a new offer, expansion, or systems rebuild has no operating spine to run on.",
-    body: "I work with founder-led service businesses, typically $500K to $5M with 5 to 20 people, built from conviction and now hitting a structural ceiling. We design the roles, decision rights, and cadence that let the work move without multiplying chaos.",
-    cta: "Book a discovery conversation",
+    kicker: "Operational consulting",
+    h1LineOne: "Growth exposes",
+    h1LineTwo: "structure.",
+    deck: "Every business runs on some kind of operating model, whether anyone named it or not. Growth makes the gaps visible.",
+    body: "I work with founder-led service businesses that already have a decent team. The next chapter needs hands-on help: a large initiative, a team you intend to grow, or an operating model that no longer fits how the work actually runs.",
+    cta: "Let's Talk",
     ctaHref: "/#contact",
-    asideLabel: "Who this is for",
-    meta: "Founder-led service firms · $500K to $5M · 5 to 20 people",
+    meta: "Founder-led service businesses",
   },
   scenarios: {
-    eyebrow: "Before any method",
-    heading: "The strain shows up in more than one way.",
+    eyebrow: "The pattern is not always the same",
+    heading: "What Growth Exposes",
     intro:
-      "The founder-as-bottleneck story is real. It is not the whole story. Some of the leaders I work with already have a capable team. What they lack is the structure to grow it, or to execute a large initiative without the business wobbling.",
+      "Growth does not create one problem. Sometimes the team is ready and the operating model is not. Sometimes a hire never had a real seat. Sometimes one desk still holds every call. Three patterns, equal weight. None of them is the whole story.",
     items: [
       {
         number: "01",
-        title: "Every decision still waits on you",
-        body: "Approvals, exceptions, and judgment calls route back to the same desk. The team pauses. You carry more than the org chart admits. The business cannot move unless you do.",
+        title: "Solid Teams, New Heights",
+        body: "You already have a capable team. What you do not have is the operating structure for a large initiative or the next chapter: a new offer, an expansion, a systems rebuild. The people can do the work. Ops has not caught up.",
       },
       {
         number: "02",
-        title: "The team grew. The org chart did not.",
-        body: "Headcount went up. Roles, decision rights, and cadence did not. People are busy. Ownership is still fuzzy. Meetings multiply because no one is sure who decides.",
+        title: "Hires Without Seats",
+        body: "Hiring fails or stalls because the role was never a seat. You hired against urgency. Accountability stayed vague. Performance stayed uneven. The next hire feels like relief, and often is not.",
       },
       {
         number: "03",
-        title: "The hire failed because the role was never defined",
-        body: "You hired against urgency, not against a sharp seat. Accountability stayed vague. Performance stayed uneven. The next hire feels like relief, and often is not.",
-      },
-      {
-        number: "04",
-        title: "Strong people, a large initiative, no operating spine",
-        body: "You already have a decent team. What you do not have is the structure to execute a new offer, an expansion, or a systems rebuild. Or you want to grow headcount on purpose, and you need roles, cadence, and accountability designed before more people multiply the chaos.",
+        title: "The Bottleneck",
+        body: "Decisions still funnel to one desk. Approvals, exceptions, and judgment calls wait. The team pauses. This is one pattern growth exposes. It is not the brand, and it is not the only reason to get help.",
       },
     ],
   },
-  method: {
-    eyebrow: "The work",
-    heading: "The Lumen Forward Method",
+  work: {
+    eyebrow: "The engagement",
+    heading: "Hands-on, then handed off",
     intro:
-      "Six moves. One aim: leave the business with an operating structure your people can actually run. I stay in the work long enough to make the change real, then I hand it off.",
-    steps: [
+      "I do not leave a deck and walk. I come in alongside your people, put structure into the work, and stay until it holds without me in the meeting.",
+    beats: [
       {
-        name: "Discern",
-        body: "We get a clear read on how the business actually runs. The unofficial map. The work that only happens because you are in the room, or because a few strong people are carrying an unnamed load.",
+        name: "See how it actually runs",
+        body: "The unofficial map. Where work waits, where it doubles, where a few strong people carry an unnamed load. We start with the business as it is, not a generic assessment.",
       },
       {
-        name: "Diagnose",
-        body: "We name the structural gap. Not a personality verdict. The place where roles, decision rights, process, or cadence stopped fitting the work in front of you.",
+        name: "Build what the team will use",
+        body: "Seats that match the work. Decision rights people can act on. Cadence that holds when the week gets loud. Right-sized for a large initiative, a growing team, or a model that growth has outpaced.",
       },
       {
-        name: "Decide",
-        body: "We choose what to change, what to leave, and what done looks like. Scope stays honest. The team can see the tradeoffs before anyone starts building.",
+        name: "Leave it with your people",
+        body: "Ownership transfers. I remain in the work until the change is real, then I step out. The point is a business that runs on clear structure, not continued presence.",
       },
-      {
-        name: "Design",
-        body: "We design the operating structure: seats, decision rights, cadence, and the few artifacts the team will actually use when the week gets loud.",
-      },
-      {
-        name: "Develop",
-        body: "We build the capability in your people. Structure has to live in the team, not in a binder I take with me when the engagement ends.",
-      },
-      {
-        name: "Deploy",
-        body: "We put it into the work. Ownership transfers. The test is simple: the system has to hold when I am not in the meeting.",
-      },
-    ],
-    example: {
-      eyebrow: "What changed",
-      heading: "A composite from the floor",
-      body: "A $1.8M advisory firm had eleven people and a founder still sitting in every client kickoff. The delivery team was capable. A new retained offer sat unlaunched because delivery roles were undefined, and two hires had stalled because the job was \"help us grow\" rather than a seat. In ten weeks we wrote scorecards for Delivery Lead and Client Partner, mapped decision rights for pricing and scope, and stood up a Monday operating meeting with owners, not a round-robin. The retained offer launched with a named lead and a backup. The founder left routine kickoffs. The two stalled seats were rewritten and filled against the new roles.",
-    },
-  },
-  paradox: {
-    eyebrow: "A pattern, not a verdict",
-    heading: "The stewardship paradox",
-    pull: "I've watched this pattern break businesses.",
-    body: [
-      "The founder who cares the most often holds the most. Every exception, every quality check, every relationship stays close because the work matters. That care is the reason the company exists. It is also the reason the company cannot grow past one person's calendar.",
-      "The paradox is not that you care too much. The paradox is that holding everything yourself is a poor way to protect what you built. Roles, cadence, and decision rights are how care scales. They are how a meaningful business stays meaningful when you are not in every room.",
-      "This is not a lecture about letting go. It is an observation from the floor. Businesses break when the person who built them remains the operating system. They also stall when a capable team is asked to execute a large initiative without an operating system at all.",
     ],
   },
   credibility: {
@@ -109,27 +76,32 @@ export const home = {
     aboutEyebrow: "About",
     aboutHeading: "Jen Zils, Lumen Forward",
     about: [
-      "Jen Zils founded Lumen Forward after two decades in operational leadership. Nineteen years at GE Capital. A Six Sigma Black Belt. Then COO of Product Launch Formula, through August 2026.",
-      "She works as a trusted peer in the room. Warm, direct, and practical. The work is to diagnose where structure stopped fitting, design what the team can run, and stay long enough to deploy it.",
-      "Lumen Forward is for founder-led service businesses that were built from conviction and have hit a structural ceiling. Sometimes the founder is still the bottleneck. Sometimes the team is already strong and the next chapter has no operating spine. The job is the same: make the business runnable by the people in it.",
+      "Jen Zils founded Lumen Forward after two decades in operational leadership. Nineteen years at GE Capital. A Six Sigma Black Belt. Then COO of Product Launch Formula, a role that ended in August 2026.",
+      "She works as a trusted peer in the room. Warm, direct, practical. She comes in to see where structure stopped fitting, build what the team can run, and stay long enough for it to hold.",
+      "Lumen Forward is for founder-led service businesses whose people can do the work, and whose operating model has not kept up. A large initiative. A team you want to grow well. Structure that growth has outpaced. The job is the same: leave the business runnable by the people in it.",
     ],
+  },
+  example: {
+    eyebrow: "What changed",
+    heading: "A composite from the floor",
+    body: "An advisory firm had a capable delivery team and a new retained offer that would not launch. Two hires had stalled because the job was \"help us grow\" rather than a seat. In ten weeks we wrote scorecards for Delivery Lead and Client Partner, mapped who owned pricing and scope, and stood up a Monday operating meeting with named owners. The retained offer launched with a lead and a backup. The two stalled seats were rewritten and filled against the new roles.",
   },
   cta: {
     eyebrow: "Next step",
-    heading: "A discovery conversation.",
-    body: "One conversation. How the business actually runs, where it is heavy, and whether this work is a fit. Bring the bottleneck, the blurry org chart, the failed hire, or the initiative that needs a spine. I will tell you what it would take.",
+    heading: "Let's Talk",
+    body: "Tell me what growth is exposing. A large initiative, a team you want to grow, or a structure that no longer fits. I will tell you whether this work is a fit, and what it would take.",
     micro: "No pitch deck. No theater. A clear read on fit.",
     fields: {
       name: "Name",
       email: "Email",
       note: "What is going on in the business?",
     },
-    submit: "Request a conversation",
+    submit: "Let's Talk",
     sending: "Sending",
     success: "Received. I will follow up shortly.",
     errorIncomplete: "Please complete all three fields.",
     errorSend: "The form did not send. You can write directly instead.",
-    underForm: "If you would rather email, write to the address in the footer with a few sentences on the current strain.",
+    underForm: "If you would rather email, write to the address in the footer with a few sentences on what growth is exposing.",
   },
 } as const;
 
@@ -139,7 +111,7 @@ export const privacyPage = {
   sections: [
     {
       title: "What this site collects",
-      body: "This is a marketing site. There is no account system and no product login. If you write through the discovery form, I receive the name, email, and note you send so I can reply.",
+      body: "This is a marketing site. There is no account system and no product login. If you write through Let's Talk, I receive the name, email, and note you send so I can reply.",
     },
     {
       title: "How messages are delivered",
@@ -155,7 +127,7 @@ export const privacyPage = {
     },
     {
       title: "Questions",
-      body: "If you want a message removed or you have a privacy question, use the discovery form and say so. I will handle it directly.",
+      body: "If you want a message removed or you have a privacy question, write through Let's Talk and say so. I will handle it directly.",
     },
   ],
 } as const;

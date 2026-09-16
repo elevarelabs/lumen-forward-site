@@ -14,12 +14,12 @@ export function SiteHeader() {
           {site.name}
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-6 xl:gap-8 lg:flex" aria-label="Primary">
           {nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-[0.78rem] font-medium tracking-[0.12em] text-navy-soft uppercase transition-colors hover:text-navy"
+              className="text-[0.75rem] font-medium tracking-[0.08em] text-navy-soft uppercase transition-colors hover:text-navy"
             >
               {item.label}
             </Link>
@@ -28,7 +28,7 @@ export function SiteHeader() {
             href={routes.contact}
             className="bg-navy px-4 py-2 text-[0.78rem] font-medium tracking-[0.12em] text-cream uppercase transition-colors hover:bg-navy-soft"
           >
-            Discovery
+            {site.cta}
           </Link>
         </nav>
 
@@ -66,7 +66,7 @@ export function SiteHeader() {
               className="mt-3 inline-flex w-fit bg-navy px-5 py-3 text-[0.9rem] text-cream"
               onClick={() => setOpen(false)}
             >
-              Book a discovery conversation
+              {site.cta}
             </Link>
           </nav>
         </div>

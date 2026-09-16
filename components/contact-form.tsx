@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 type Status = "idle" | "submitting" | "success" | "error";
 
 function mailtoHref(name: string, email: string, note: string) {
-  const subject = encodeURIComponent(`Discovery conversation: ${name || "Founder"}`);
+  const subject = encodeURIComponent(`Let's Talk: ${name || "Founder"}`);
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nWhat is going on in the business?\n${note}`);
   return `mailto:${site.email}?subject=${subject}&body=${body}`;
 }
@@ -73,7 +73,7 @@ export function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} className="space-y-6" noValidate>
-      <input type="hidden" name="_subject" value="Discovery conversation: Lumen Forward" />
+      <input type="hidden" name="_subject" value="Let's Talk: Lumen Forward" />
       <label className="block">
         <span className="mb-2 block text-[0.78rem] tracking-[0.12em] text-cream/70 uppercase">{home.cta.fields.name}</span>
         <input className={fieldClass} type="text" name="name" autoComplete="name" required />

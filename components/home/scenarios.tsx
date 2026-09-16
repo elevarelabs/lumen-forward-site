@@ -6,17 +6,17 @@ import { home } from "@/lib/copy";
 
 export function Scenarios() {
   return (
-    <section id="scenarios" className="scroll-mt-20 border-t border-navy/10 bg-cream" aria-labelledby="scenarios-heading">
+    <section id="growth" className="scroll-mt-20 border-t border-navy/10 bg-cream" aria-labelledby="growth-heading">
       <div className="mx-auto max-w-[1400px] px-6 py-24 sm:px-8 lg:px-12 lg:py-32">
         <Reveal className="max-w-3xl">
           <p className="eyebrow text-navy-soft">{home.scenarios.eyebrow}</p>
-          <h2 id="scenarios-heading" className="mt-5 font-serif text-4xl leading-tight text-navy sm:text-5xl lg:text-[3.4rem]">
+          <h2 id="growth-heading" className="mt-5 font-serif text-4xl leading-tight text-navy sm:text-5xl lg:text-[3.4rem]">
             {home.scenarios.heading}
           </h2>
           <p className="mt-6 max-w-2xl text-[1.08rem] leading-relaxed text-navy-soft">{home.scenarios.intro}</p>
         </Reveal>
 
-        <ol className="mt-16 grid gap-px bg-navy/10 sm:grid-cols-2">
+        <ol className="mt-16 grid gap-px bg-navy/10 lg:grid-cols-3">
           {home.scenarios.items.map((item, index) => (
             <motion.li
               key={item.number}

@@ -1,8 +1,8 @@
 # Lumen Forward
 
-Marketing site for Lumen Forward Consulting. Operating structure for founder-led service businesses.
+Marketing site for Lumen Forward Consulting. Operational consulting for founder-led service businesses.
 
-**You built something meaningful. Now it can't run without you.**
+**Growth exposes structure.**
 
 ## Stack
 
@@ -41,12 +41,12 @@ npm run build
 
 | Path | Page |
 | --- | --- |
-| `/` | Homepage (hero, scenarios, method, paradox, credibility, discovery) |
+| `/` | Homepage (hero, What Growth Exposes, work, credibility, client example, Let's Talk) |
 | `/privacy` | Privacy |
 
 ## Contact form
 
-The discovery form uses Formspree when an action URL is set. Otherwise it opens a mailto draft.
+The Let's Talk form uses Formspree when an action URL is set. Otherwise it opens a mailto draft.
 
 | Variable | Required | Purpose |
 | --- | --- | --- |

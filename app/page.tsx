@@ -1,9 +1,9 @@
+import { ClientExample } from "@/components/home/client-example";
 import { Credibility } from "@/components/home/credibility";
-import { DiscoveryCta } from "@/components/home/discovery-cta";
 import { Hero } from "@/components/home/hero";
-import { Method } from "@/components/home/method";
-import { Paradox } from "@/components/home/paradox";
+import { LetsTalk } from "@/components/home/lets-talk";
 import { Scenarios } from "@/components/home/scenarios";
+import { Work } from "@/components/home/work";
 import { site } from "@/lib/site";
 
 const jsonLd = {
@@ -26,10 +26,10 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Hero />
       <Scenarios />
-      <Method />
-      <Paradox />
+      <Work />
       <Credibility />
-      <DiscoveryCta />
+      <ClientExample />
+      <LetsTalk />
     </>
   );
 }

@@ -67,7 +67,7 @@ export default function OpenGraphImage() {
               fontStyle: "italic",
             }}
           >
-            You built something meaningful. Now it can&apos;t run without you.
+            Growth exposes structure.
           </div>
         </div>
       </div>
