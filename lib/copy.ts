@@ -8,6 +8,8 @@ export const home = {
     body: "I work with founder-led service businesses that already have a decent team. The next chapter needs hands-on help: a large initiative, a team you intend to grow, or an operating model that no longer fits how the work actually runs.",
     cta: "Let's Talk",
     ctaHref: "/#contact",
+    secondaryCta: "Take the Structure Check",
+    secondaryHref: "/structure-check",
     meta: "Founder-led service businesses",
   },
   scenarios: {
@@ -32,6 +34,8 @@ export const home = {
         body: "Decisions still funnel to one desk. Approvals, exceptions, and judgment calls wait. The team pauses. This is one pattern growth exposes. It is not the brand, and it is not the only reason to get help.",
       },
     ],
+    reportLead: "Want the written briefing on these three patterns?",
+    reportCta: "Get the report",
   },
   work: {
     eyebrow: "The engagement",
@@ -105,13 +109,70 @@ export const home = {
   },
 } as const;
 
+export const structureCheckPage = {
+  eyebrow: "Free · about three minutes · six questions",
+  heading: "Structure Check",
+  lede: "A private diagnostic. Where growth is exposing structure, and what to move first. Not a personality test. Not a cute quiz. A path forward.",
+  tagline: "See the pattern. Then choose the next move.",
+} as const;
+
+export const engagementsPage = {
+  heading: "Engagements",
+  intro:
+    "Hands-on operational leadership. Start with a private diagnostic, the written briefing, or a conversation. I stay in the work until the structure holds with your people.",
+  rungs: [
+    {
+      name: "Structure Check",
+      meta: "Free · about three minutes",
+      body: "Six questions. A clearer read on where growth is exposing structure, and what to move first. Start here if you want a private signal before we talk.",
+      href: "/structure-check",
+      cta: "Take the Structure Check",
+    },
+    {
+      name: "Hands-on work",
+      meta: "Scoped",
+      body: "I come in alongside your team. We put seats, decision rights, and cadence into the work of a large initiative, a growing org, or a model that growth has outpaced. Then I hand it off. No forever retainer as the default.",
+      href: "/#contact",
+      cta: "Let's Talk",
+    },
+  ],
+  report: {
+    eyebrow: "Written briefing",
+    heading: "What Growth Exposes",
+    cta: "Get the report",
+    lede: "Three patterns, equal weight. A short briefing you can share with the people who have to live inside the structure.",
+    sections: [
+      {
+        title: "Solid Teams, New Heights",
+        body: "The team can already do the work. What failed to keep up is the operating model for the next chapter: a new offer, an expansion, a systems rebuild. Meetings multiply because ownership was never named for the new load. Delivery quality is not the issue. Cadence, seats, and decision rights are. The work is to give a capable team a spine that matches the height they are being asked to reach.",
+      },
+      {
+        title: "Hires Without Seats",
+        body: "A hire fails or stalls because the role was never a seat. The job was a feeling (relief, growth, help) instead of a sharp account of what the business now requires. Accountability stayed vague. Performance stayed uneven. Adding another person without rewriting the seat repeats the same miss. The work is to define the seat first, then hire against it.",
+      },
+      {
+        title: "The Bottleneck",
+        body: "Decisions still funnel to one desk. Approvals, exceptions, and judgment calls wait. This is a real pattern, and it is only one of the patterns growth exposes. Some businesses have this and a capable team facing a large initiative at the same time. The work is not a lecture about letting go. It is naming who decides, on what, and what no longer needs to route through one person by default.",
+      },
+    ],
+    close:
+      "If one of these is the room you are in, the Structure Check will show you where to focus. If you already know, Let's Talk.",
+  },
+  fit: {
+    heading: "Fit",
+    good: "Good fit when the team can execute once the work is named, and you want a system you can run, not a permanent extra seat on the org chart.",
+    not: "Not a fit for pre-revenue experiments, board-deck-only work, or a tool project with no structure underneath it.",
+  },
+  cta: "Let's Talk",
+} as const;
+
 export const privacyPage = {
   heading: "Privacy",
   updated: "September 2026",
   sections: [
     {
       title: "What this site collects",
-      body: "This is a marketing site. There is no account system and no product login. If you write through Let's Talk, I receive the name, email, and note you send so I can reply.",
+      body: "This is a marketing site. There is no account system and no product login. If you write through Let's Talk, I receive the name, email, and note you send so I can reply. The Structure Check runs in your browser. I do not receive your answers unless you choose to follow up.",
     },
     {
       title: "How messages are delivered",
@@ -134,6 +195,6 @@ export const privacyPage = {
 
 export const notFoundCopy = {
   heading: "That page is not here.",
-  body: "The homepage is the whole site, minus this privacy note.",
+  body: "The homepage, Structure Check, and Engagements are the public site.",
   cta: "Back to Lumen Forward",
 } as const;

@@ -54,12 +54,18 @@ export function Hero() {
             <motion.p className="mt-6 text-[0.98rem] leading-relaxed text-cream/80" {...fade(0.2)}>
               {home.hero.body}
             </motion.p>
-            <motion.div className="mt-10" {...fade(0.32)}>
+            <motion.div className="mt-10 flex flex-col items-start gap-5" {...fade(0.32)}>
               <Link
                 href={home.hero.ctaHref}
                 className="inline-flex bg-gold px-6 py-3.5 text-[0.78rem] font-semibold tracking-[0.16em] text-navy uppercase transition-colors hover:bg-cream"
               >
                 {home.hero.cta}
+              </Link>
+              <Link
+                href={home.hero.secondaryHref}
+                className="text-[0.82rem] font-medium tracking-[0.08em] text-cream/85 underline decoration-gold/70 underline-offset-[0.32em] transition-colors hover:text-cream hover:decoration-gold"
+              >
+                {home.hero.secondaryCta}
               </Link>
             </motion.div>
           </div>

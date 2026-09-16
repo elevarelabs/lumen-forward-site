@@ -2,7 +2,7 @@
 
 Marketing site for Lumen Forward Consulting. Operational consulting for founder-led service businesses.
 
-**Growth exposes structure.**
+**Growth exposes structure.** Primary CTA: **Let's Talk.**
 
 ## Stack
 
@@ -42,7 +42,11 @@ npm run build
 | Path | Page |
 | --- | --- |
 | `/` | Homepage (hero, What Growth Exposes, work, credibility, client example, Let's Talk) |
+| `/structure-check` | Structure Check diagnostic |
+| `/engagements` | Engagements, including Get the report |
 | `/privacy` | Privacy |
+
+Hero CTAs: Let's Talk (primary) and Take the Structure Check (one quieter secondary). Get the report lives on Engagements and as a mid-page link, not in the hero.
 
 ## Contact form
 

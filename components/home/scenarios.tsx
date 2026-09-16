@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Reveal } from "@/components/reveal";
 import { home } from "@/lib/copy";
+import { routes } from "@/lib/site";
 
 export function Scenarios() {
   return (
@@ -33,6 +35,18 @@ export function Scenarios() {
             </motion.li>
           ))}
         </ol>
+
+        <Reveal className="mt-14 border-t border-navy/10 pt-8">
+          <p className="text-[1.02rem] text-navy-soft">
+            {home.scenarios.reportLead}{" "}
+            <Link
+              href={routes.report}
+              className="font-medium text-navy underline decoration-gold decoration-1 underline-offset-[0.28em] transition-colors hover:text-navy-soft"
+            >
+              {home.scenarios.reportCta}
+            </Link>
+          </p>
+        </Reveal>
       </div>
     </section>
   );

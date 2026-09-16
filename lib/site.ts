@@ -22,11 +22,22 @@ export const routes = {
   work: "/#work",
   about: "/#about",
   contact: "/#contact",
+  structureCheck: "/structure-check",
+  engagements: "/engagements",
+  report: "/engagements#report",
   privacy: "/privacy",
 } as const;
 
 export const nav = [
   { href: routes.growth, label: "What Growth Exposes" },
-  { href: routes.work, label: "Work" },
+  { href: routes.engagements, label: "Engagements" },
+  { href: routes.structureCheck, label: "Structure Check" },
   { href: routes.about, label: "About" },
+] as const;
+
+export const footerLinks = [
+  { href: routes.contact, label: "Let's Talk" },
+  { href: routes.structureCheck, label: "Structure Check" },
+  { href: routes.report, label: "Get the report" },
+  { href: routes.privacy, label: "Privacy" },
 ] as const;
