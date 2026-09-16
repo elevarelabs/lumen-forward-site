@@ -8,8 +8,8 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-navy/10 bg-cream/90 backdrop-blur-md">
-      <div className="mx-auto flex h-16 w-full max-w-[1400px] items-center justify-between px-5 sm:px-8 lg:px-12">
+    <header className="sticky top-0 z-50 border-b border-navy/10 bg-cream/92 backdrop-blur-md">
+      <div className="mx-auto flex h-[4.75rem] w-full max-w-[1400px] items-center justify-between px-6 sm:px-10 lg:px-14">
         <Link href={routes.home} className="font-serif text-[1.35rem] tracking-[-0.02em] text-navy">
           {site.name}
         </Link>

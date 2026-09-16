@@ -1,47 +1,43 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { Reveal } from "@/components/reveal";
 import { home } from "@/lib/copy";
 import { routes } from "@/lib/site";
 
 export function Scenarios() {
   return (
-    <section id="growth" className="scroll-mt-20 border-t border-navy/10 bg-cream" aria-labelledby="growth-heading">
-      <div className="mx-auto max-w-[1400px] px-6 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <Reveal className="max-w-3xl">
+    <section id="growth" className="scroll-mt-24 bg-cream" aria-labelledby="growth-heading">
+      <div className="mx-auto max-w-[1400px] px-6 py-28 sm:px-10 lg:px-14 lg:py-36">
+        <Reveal className="max-w-2xl">
           <p className="eyebrow text-navy-soft">{home.scenarios.eyebrow}</p>
-          <h2 id="growth-heading" className="mt-5 font-serif text-4xl leading-tight text-navy sm:text-5xl lg:text-[3.4rem]">
+          <h2
+            id="growth-heading"
+            className="mt-6 font-serif text-[2.6rem] leading-[1.08] tracking-[-0.02em] text-navy sm:text-5xl lg:text-[3.6rem]"
+          >
             {home.scenarios.heading}
           </h2>
-          <p className="mt-6 max-w-2xl text-[1.08rem] leading-relaxed text-navy-soft">{home.scenarios.intro}</p>
+          <p className="mt-7 max-w-xl text-[1.06rem] leading-[1.75] text-navy-soft">{home.scenarios.intro}</p>
         </Reveal>
 
-        <ol className="mt-16 grid gap-px bg-navy/10 lg:grid-cols-3">
+        <ol className="mt-20 grid gap-16 lg:grid-cols-3 lg:gap-x-14">
           {home.scenarios.items.map((item, index) => (
-            <motion.li
-              key={item.number}
-              className="group bg-cream p-8 sm:p-10"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.55, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
-              whileHover={{ y: -2 }}
-            >
-              <p className="font-sans text-sm font-medium tracking-[0.2em] text-gold">{item.number}</p>
-              <h3 className="mt-5 font-serif text-[1.7rem] leading-snug text-navy">{item.title}</h3>
-              <p className="mt-4 text-[1.02rem] leading-relaxed text-navy-soft">{item.body}</p>
-            </motion.li>
+            <Reveal key={item.number} delay={index * 0.05}>
+              <li>
+                <p className="font-sans text-[0.7rem] font-medium tracking-[0.22em] text-gold">{item.number}</p>
+                <h3 className="mt-5 font-serif text-[1.85rem] leading-snug text-navy">{item.title}</h3>
+                <p className="mt-5 text-[1.04rem] leading-[1.75] text-navy-soft">{item.body}</p>
+              </li>
+            </Reveal>
           ))}
         </ol>
 
-        <Reveal className="mt-14 border-t border-navy/10 pt-8">
-          <p className="text-[1.02rem] text-navy-soft">
+        <Reveal className="mt-20">
+          <p className="text-[0.98rem] leading-relaxed text-navy-soft">
             {home.scenarios.reportLead}{" "}
             <Link
               href={routes.report}
-              className="font-medium text-navy underline decoration-gold decoration-1 underline-offset-[0.28em] transition-colors hover:text-navy-soft"
+              className="text-navy underline decoration-gold/80 decoration-1 underline-offset-[0.3em] transition-colors hover:decoration-gold"
             >
               {home.scenarios.reportCta}
             </Link>

@@ -1,7 +1,6 @@
 export const home = {
   hero: {
     spine: "Lumen Forward Consulting",
-    kicker: "Operational consulting",
     h1LineOne: "Growth exposes",
     h1LineTwo: "structure.",
     deck: "Every business runs on some kind of operating model, whether anyone named it or not. Growth makes the gaps visible.",
@@ -38,7 +37,7 @@ export const home = {
     reportCta: "Get the report",
   },
   work: {
-    eyebrow: "The engagement",
+    eyebrow: "How we work",
     heading: "Hands-on, then handed off",
     intro:
       "I do not leave a deck and walk. I come in alongside your people, put structure into the work, and stay until it holds without me in the meeting.",

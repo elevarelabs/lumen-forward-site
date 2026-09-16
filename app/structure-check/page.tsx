@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function StructureCheckPage() {
   return (
     <section className="bg-cream">
-      <div className="mx-auto max-w-[1400px] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
+      <div className="mx-auto max-w-[1400px] px-6 py-28 sm:px-10 lg:px-14 lg:py-32">
         <div className="max-w-2xl">
           <p className="eyebrow text-navy-soft">{structureCheckPage.eyebrow}</p>
           <h1 className="mt-5 font-serif text-5xl leading-[1.05] text-navy md:text-6xl">

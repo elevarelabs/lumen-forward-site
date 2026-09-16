@@ -4,17 +4,17 @@ import { home } from "@/lib/copy";
 
 export function LetsTalk() {
   return (
-    <section id="contact" className="scroll-mt-20 border-t border-cream/10 bg-navy text-cream" aria-labelledby="contact-heading">
-      <div className="mx-auto grid max-w-[1400px] gap-14 px-6 py-24 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:px-12 lg:py-32">
+    <section id="contact" className="scroll-mt-24 bg-navy text-cream" aria-labelledby="contact-heading">
+      <div className="mx-auto grid max-w-[1400px] gap-16 px-6 py-28 sm:px-10 lg:grid-cols-2 lg:gap-24 lg:px-14 lg:py-36">
         <Reveal>
           <p className="eyebrow text-gold">{home.cta.eyebrow}</p>
-          <h2 id="contact-heading" className="mt-5 font-serif text-4xl leading-tight sm:text-5xl">
+          <h2 id="contact-heading" className="mt-6 font-serif text-[2.6rem] leading-[1.08] sm:text-5xl">
             {home.cta.heading}
           </h2>
-          <p className="mt-6 max-w-xl text-[1.08rem] leading-relaxed text-cream/80">{home.cta.body}</p>
-          <p className="mt-6 text-sm tracking-wide text-gold">{home.cta.micro}</p>
+          <p className="mt-7 max-w-md text-[1.06rem] leading-[1.75] text-cream/80">{home.cta.body}</p>
+          <p className="mt-8 text-[0.8rem] tracking-[0.08em] text-gold">{home.cta.micro}</p>
         </Reveal>
-        <Reveal delay={0.1}>
+        <Reveal delay={0.08}>
           <ContactForm />
         </Reveal>
       </div>

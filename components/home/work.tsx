@@ -1,36 +1,34 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Reveal } from "@/components/reveal";
 import { home } from "@/lib/copy";
 
 export function Work() {
   return (
-    <section id="work" className="scroll-mt-20 bg-navy text-cream" aria-labelledby="work-heading">
-      <div className="mx-auto max-w-[1400px] px-6 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <Reveal className="max-w-3xl">
+    <section id="work" className="scroll-mt-24 bg-navy text-cream" aria-labelledby="work-heading">
+      <div className="mx-auto max-w-[1400px] px-6 py-28 sm:px-10 lg:px-14 lg:py-36">
+        <Reveal className="max-w-2xl">
           <p className="eyebrow text-gold">{home.work.eyebrow}</p>
-          <h2 id="work-heading" className="mt-5 font-serif text-4xl leading-tight sm:text-5xl lg:text-[3.4rem]">
+          <h2
+            id="work-heading"
+            className="mt-6 font-serif text-[2.6rem] leading-[1.08] tracking-[-0.02em] sm:text-5xl lg:text-[3.6rem]"
+          >
             {home.work.heading}
           </h2>
-          <p className="mt-6 max-w-2xl text-[1.08rem] leading-relaxed text-cream/80">{home.work.intro}</p>
+          <p className="mt-7 max-w-xl text-[1.06rem] leading-[1.75] text-cream/80">{home.work.intro}</p>
         </Reveal>
 
-        <ol className="mt-16 grid gap-12 md:grid-cols-3">
+        <ol className="mt-20 grid gap-14 md:grid-cols-3 md:gap-12">
           {home.work.beats.map((beat, index) => (
-            <motion.li
-              key={beat.name}
-              initial={{ opacity: 0, y: 22 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.35 }}
-              transition={{ duration: 0.55, delay: index * 0.05, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <p className="font-sans text-sm font-medium tracking-[0.22em] text-gold">
-                {String(index + 1).padStart(2, "0")}
-              </p>
-              <h3 className="mt-4 font-serif text-3xl">{beat.name}</h3>
-              <p className="mt-4 text-[1.02rem] leading-relaxed text-cream/80">{beat.body}</p>
-            </motion.li>
+            <Reveal key={beat.name} delay={index * 0.06}>
+              <li className="border-t border-gold/40 pt-8">
+                <p className="font-sans text-[0.7rem] font-medium tracking-[0.22em] text-gold">
+                  {String(index + 1).padStart(2, "0")}
+                </p>
+                <h3 className="mt-5 font-serif text-[1.85rem] leading-snug">{beat.name}</h3>
+                <p className="mt-5 text-[1.04rem] leading-[1.75] text-cream/80">{beat.body}</p>
+              </li>
+            </Reveal>
           ))}
         </ol>
       </div>
